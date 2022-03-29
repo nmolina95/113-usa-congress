@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Vadodara:wght@300;400;500&family=Martel:wght@200;300&family=Prompt:ital,wght@0,100;0,200;1,200&display=swap');
+
+:root{
+    --subtitle-font: 'Martel', serif;
+    --title-font: 'Prompt', sans-serif;
+    --text-font: 'Hind Vadodara', sans-serif;
+    --header-background: #1A374D;
+    --nav-links-background: #406882;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+  }
+  
+.body {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.dropdown-menu{
+    top: unset!important;
+    left: unset!important;
+}
+
+.header{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--header-background);
+    flex-wrap: wrap;
+}
+
+.logo-image{
+    width: 100%;
+}
+
+.nav-links-container{
+    background: #406882;
+    width: 100%;
+}
+
+.nav-links{
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    list-style-type: none;
+    padding-left: 0;
+    background: var(--nav-links-background);
+}
+
+.nav-link{
+    color: rgb(249,249,249);
+    text-decoration: none;
+    transition: 300ms;
+    font-family: var(--title-font);
+}
+
+.nav-link:hover{
+    background: rgb(249,249,249);
+    color: var(--nav-links-background);
+    transition: 300ms;
+}
+
+.nav-link:focus{
+    background: rgb(249,249,249);
+    color: var(--nav-links-background);
+    transition: 300ms;
+}
+
+address{
+    margin-bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.contact{
+    color: rgb(249,249,249);
+    font-family: var(--title-font);
+    text-decoration: none;
+    transition: 300ms;
+}
+
+main{
+    font-family: var(--text-font);
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.icons{
+    display: flex;
+    border-radius: 11rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-circle{
+    font-size: 22rem;
+    color: var(--header-background);
+}
+
+.fa-chart-bar{
+    color: #B1D0E0;
+    font-size: 16rem;
+    position: absolute;
+}
+
+h2{
+    font-family: var(--subtitle-font);
+    font-size:2.5rem;
+}
+
+h3{
+    font-family: var(--subtitle-font);
+    font-size: 2rem;
+}
+
+article p{
+    text-indent: 1.5rem;
+}
+
+.filters{
+    width: 100%;
+    text-align: center;
+    border-bottom: 0.1px solid black;
+    border-top: 0.1px solid black;
+    padding: 0.5rem 0;
+    margin-bottom:0.5rem;
+}
+
+.filters-container{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex-wrap: wrap;
+    
+}
+
+.filters-container div{
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 0;
+}
+
+.filters-container div p{
+    margin-bottom: 0;
+    margin-right: 0.5rem;
+}
+
+.filters p{
+    font-weight: bold;
+}
+
+.party{
+    margin: 0 0.5rem;
+}
+
+.accordion{
+    width: 100%;
+}
+
+.accordion-header{
+    display: flex;
+    justify-content: center;
+}
+
+.accordion-button{
+    width: fit-content;
+}
+
+.accordion-button:hover {
+    text-decoration: underline;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+.accordion-button:not(.collapsed){
+    background: none;
+    color: var(--bs-body-color);
+    box-shadow: none;
+}
+
+.accordion-body{
+    padding-left: 0;
+}
+
+table{
+    color: #111111;
+}
+
+th{
+    color: #111111;
+}
+
+.member-index{
+    text-align: center;
+}
+
+.footer{
+    background: #6998AB;
+    width: 100%;
+    color: rgb(249,249,249);
+    padding: 0.5rem 1rem;
+    text-align: center;
+    font-family: var(--text-font);
+    position: -webkit-sticky;
+    position: sticky;
+    top: 20px;
+}
+
+.footer p{
+    margin-bottom: 0;
+}
+
+@media screen and (min-width: 767px) {
+    .filters-container{
+        justify-content: space-evenly;
+    }
+    .filters-container div{
+        padding: 0;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    address{
+        margin-right: 1rem;
+        width: unset;
+    }
+    
+    .navbar{
+        padding-top:0;
+        box-shadow: 0 1px 10px 0 rgba(0,0,0,0.5);
+    }
+
+    .header a{
+        margin: 0.8rem;
+        position: relative;
+    }
+
+    .logo-image{
+        box-shadow: 0 0 10px black;
+    }
+
+    .table-article{
+        width: 49%;
+    }
+}
